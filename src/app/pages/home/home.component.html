@@ -5,3 +5,13 @@
     <app-hijo [textoHijo]="subtitulo" (textoHijoOut)="subtitulo = $event"></app-hijo>
     
 </div>
+
+
+<div>
+    <h1>EJERCICIO SESION 14</h1>
+    <div>
+        <h2>COMPONENTE PADRE</h2>
+        <input type="text" [(ngModel)]="textoEnPadre" class="border">
+    </div>
+    <app-hijo2 [textoEnHijo]="textoEnPadre"></app-hijo2>
+</div>

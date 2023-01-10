@@ -17,7 +17,8 @@ import { Hijo2Component } from './hijo2/hijo2.component';
   ],
   exports: [
     HijoComponent,
-    HeaderComponent
+    HeaderComponent,
+    Hijo2Component
   ]
 })
 export class ComponentsModule { }

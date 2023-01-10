@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
+import { PipesPipe } from './pipes.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PipesPipe
   ],
   imports: [
     BrowserModule,

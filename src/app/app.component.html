@@ -1,16 +1,20 @@
 <app-header></app-header>
-<div>
-  <h1>{{titulo}}</h1>
-  <h2>EJERCICIO SESION 15</h2>
+
+<!-- ejercicio de la sesion 15 -->
+<div class="w-3/4 mt-10 p-8 mx-auto border">
+  <h1 class="text-3xl mb-5">{{titulo}}</h1>
+  <h2 class="text-xl mb-5 font-semibold">EJERCICIO SESION 15</h2>
   <p>Event binding</p>
-  <button class="border" (click)="cambio()">{{opcion}}</button>
-  <div *ngIf="mostrarDiv">
+  <button class="border my-6 p-2 rounded-lg border-black border-2 hover:bg-yellow-300 active:bg-violet-700 active:text-white" (click)="cambio()">{{opcion}}</button>
+  <div *ngIf="mostrarDiv" class="border-4 border-white border-b-indigo-100 pb-3">
     <p>Event Binding es el mecanismo de data binding mediante el cual se trabaja con los eventos que se encuentran en el DOM</p>
   </div>
-  <h3>Two way binding</h3>
-  <p>{{Two_way}}</p>
-  <textarea name="" id="" cols="30" rows="10" [(ngModel)]="Two_way" class="border"></textarea>
+  <h3 class="my-4">Two way binding</h3>
+  <p class="mb-4">{{Two_way}}</p>
+  <textarea name="" id="" cols="30" rows="5" [(ngModel)]="Two_way" class="border w-full rounded-md border-black border-1 focus:border-3 hover:border-rose-500 py-1 px-2"></textarea>
 </div>
-<div class="w-3/4 mt-10 p-8 mx-auto">
+
+<!-- Ejemplo de clase y ejercicio de la sesion 14 -->
+<div class="w-3/4 mt-10 p-8 mx-auto border">
   <router-outlet></router-outlet>
 </div>

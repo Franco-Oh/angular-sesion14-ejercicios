@@ -16,11 +16,9 @@ export class AppComponent {
     if(this.opcion == 'Ocultar'){
       this.opcion = "Mostrar";
       this.mostrarDiv = false;
-      console.log(this.opcion + this.mostrarDiv);
     } else if(this.opcion == 'Mostrar'){
       this.opcion = "Ocultar";
       this.mostrarDiv = true;
-      console.log(this.opcion + this.mostrarDiv);
     }
   }
 
